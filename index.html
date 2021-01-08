@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>The Mall</title>
+        <title id = 'title'>The Mall</title>
         <link rel='icon' href='https://cdn.discordapp.com/icons/784604457320316989/e832a8a8e7dfcfdf5c4dc7fa8b5c33fb.png?size=2048'>
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
@@ -11,11 +11,11 @@
         <link rel='stylesheet' href='style.css'>
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
-    <body>
+    <body onload="element('The Mall', 'H1', 'titlemain')">
         <div id="nav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="#">About</a>
-            <a href="javascript:window.open('https://discord.gg/3vqFTqkxvG')">Join</a>
+            <a href="#about" onclick="about()">About</a>
+            <a href="https://discord.gg/3vqFTqkxvG" target="_blank">Join</a>
             <a href="#">Clients</a>
             <a href="#">Contact</a>
         </div>
